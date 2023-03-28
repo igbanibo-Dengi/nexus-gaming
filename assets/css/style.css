@@ -82,10 +82,6 @@ img{
     color: var(--c-brand);
  }
 
- .sign-in{
-    color: var(--c-brand);
-    border: 1px solid red;
- }
 
  /* button */
 
@@ -101,6 +97,7 @@ img{
     background-color: var(--c-brand);
     border-color: var(--c-brand);
     color: white;
+    border-radius: 15px;
 }
 
 .btn-brand:hover{
@@ -234,8 +231,8 @@ img{
     transform: rotate(45deg);
 }
 
-/* TEAM */
-.team-member-content{
+/* BLOG POST */
+.blog-post-content{
     
     position: absolute;
     bottom: 24px;
@@ -244,7 +241,7 @@ img{
     width: 100%;
 }
 
-.team-member img{
+.blog-post img{
     opacity: 1;
 }
 
@@ -328,4 +325,20 @@ footer .line{
 .social-icons a:hover{
     background-color: var(--c-brand);
     color: white;
+}
+
+
+
+
+
+.login-form{
+    border-radius: 25px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+}
+
+.signup-card{
+margin-top: 100px;
+margin-bottom: 150px;
 }

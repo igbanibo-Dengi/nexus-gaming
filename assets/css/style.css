@@ -152,7 +152,7 @@ img{
 /* SECTION TITLE */
 
 .section-title{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .section-title .line{
@@ -229,14 +229,6 @@ img{
  transition: 0.3s ease-out;
 }
 
-/*Text*/
-/* .text-title {
- font-size: 1rem;
- font-weight: bold;
-} */
-
-/*Hover*/
-
 .card:hover .card-button {
  transform: translate(-50%, 50%);
  opacity: 1;
@@ -256,24 +248,6 @@ img{
     padding-top: 40%;
     background-color: rgba(0, 0, 0, 0.5);
 	}
-
-
-/* PORTFOLIO */
-
-/* .portfolio-item .iconbox{
-    background-color: var(--c-brand);
-    color: white;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-.portfolio-item:hover .iconbox{
-    opacity: 1;
-    top: 50%;
-} */
 
 /* BLOG POST */
 .blog-post-content{
@@ -338,7 +312,7 @@ footer .line{
 
 
 
-/* LOG IN AND SIGN UP SECTION */
+/* LOG IN AND SIGN UP PAGE */
 
 .login-form{
     border-radius: 25px;
@@ -352,3 +326,18 @@ margin-top: 100px;
 margin-bottom: 150px;
 }
 
+/* FEATURED GAMES PAGE */
+
+.tournament-hero{
+    height: 50vh;
+}
+
+#hero-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.448), rgba(0, 0, 0, 0.554)), url(../images/hero-2.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+
+.main-tournament-padding{
+    padding-top: 50px;
+}

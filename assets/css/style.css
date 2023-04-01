@@ -40,7 +40,7 @@ img{
 }
 
 .section-padding{
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 60px;
 }
 
@@ -86,11 +86,22 @@ img{
  /* button */
 
  .btn{
-    font-weight: 600;
-    font-size: 14 px;
-    text-transform: uppercase;
-    border-radius: 0;
-    padding: 10px 24px;
+    position: relative;
+    /* display: inline-block; */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--c-brand);
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid var(--c-brand);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 var(--c-brand);
  }
 
 .btn-brand{
@@ -100,11 +111,35 @@ img{
     border-radius: 15px;
 }
 
-.btn-brand:hover{
-    background-color: var(--c-band-light);
+.btn:hover{
     color: white;
+    box-shadow: inset 0 -100px 0 0 var(--c-brand);
 }
 
+
+.button {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--c-brand);
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid var(--c-brand);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 var(--c-brand);
+  }
+  
+  .button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 var(--c-brand);
+  }
 
 /* HERO SECTION  */
 
@@ -147,42 +182,6 @@ img{
     flex: none;
 }
 
-/* SERVICES */
-
-.service{
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-}
-
-.service::after{
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: rgba(var(--c-brand-rgb), 0.2);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transition: var(--transition);
-}
-
-.service:hover::after{
-    width: 100%;
-    height: 100%;
-    background: var(--c-brand);
-    z-index: -1;
-}
-
-.service:hover h5,
-.service:hover p{
-    color: white;
-}
-
-.service:hover .iconbox{
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-}
-
 /* COUNTER */
 
 #counter{
@@ -192,9 +191,76 @@ img{
 }
 
 
+
+/* FEATURED GAMES */
+
+.card {
+ background: #f5f5f5;
+ position: relative;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ border: 5px solid var(--c-brand);
+}
+
+.card img {
+    z-index: -2;
+}
+
+.card-details {
+ color: white;
+ height: 50%;
+ display: grid;
+ place-content: center;
+}
+
+.card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: var(--c-brand);
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem; 
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+/*Text*/
+/* .text-title {
+ font-size: 1rem;
+ font-weight: bold;
+} */
+
+/*Hover*/
+
+.card:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+
+/* overlay */
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    padding-top: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+	}
+
+
 /* PORTFOLIO */
 
-.portfolio-item .iconbox{
+/* .portfolio-item .iconbox{
     background-color: var(--c-brand);
     color: white;
     position: absolute;
@@ -207,29 +273,7 @@ img{
 .portfolio-item:hover .iconbox{
     opacity: 1;
     top: 50%;
-}
-
-/* REVIEW */
-
-.review small{
-    font-weight: 600;
-    text-transform: uppercase;
-    color: var(--c-brand);
-}
-
-.review-head{
-    position: relative;
-}
-
-.review-head::after{
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    bottom: -8px;
-    background-color: white;
-    transform: rotate(45deg);
-}
+} */
 
 /* BLOG POST */
 .blog-post-content{
@@ -244,41 +288,6 @@ img{
 .blog-post img{
     opacity: 1;
 }
-
-
-
-
-
-/* CONTACT */
-
-#contact{
-    position: relative;
-    z-index: 2;
-}
-
-#contact::after{
-    content: "";
-    width: 100%;
-    height: 70%;
-    background: linear-gradient(rgba(var(--c-brand-rgb),0.8), rgba(var(--c-brand-rgb),0.8)), url(../images/counter.jpg);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-#contact .form-control{
-    border-radius: 0;
-}
-
-#contact .form-control:focus{
-    box-shadow: none;
-    border-color: var(--c-brand);
-}
-
-
 
 /* FOOTER */
 
@@ -329,7 +338,7 @@ footer .line{
 
 
 
-
+/* LOG IN AND SIGN UP SECTION */
 
 .login-form{
     border-radius: 25px;
@@ -342,3 +351,4 @@ footer .line{
 margin-top: 100px;
 margin-bottom: 150px;
 }
+

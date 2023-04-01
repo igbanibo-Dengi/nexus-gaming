@@ -194,7 +194,7 @@ img{
 
 /* FEATURED GAMES */
 
-.card {
+.cards {
  background: #f5f5f5;
  position: relative;
  transition: 0.5s ease-out;
@@ -202,18 +202,18 @@ img{
  border: 5px solid var(--c-brand);
 }
 
-.card img {
+.cards img {
     z-index: -2;
 }
 
-.card-details {
+.cards-details {
  color: white;
  height: 50%;
  display: grid;
  place-content: center;
 }
 
-.card-button {
+.cards-button {
  transform: translate(-50%, 125%);
  width: 60%;
  border-radius: 1rem;
@@ -229,7 +229,7 @@ img{
  transition: 0.3s ease-out;
 }
 
-.card:hover .card-button {
+.cards:hover .cards-button {
  transform: translate(-50%, 50%);
  opacity: 1;
 }
@@ -340,4 +340,14 @@ margin-bottom: 150px;
 
 .main-tournament-padding{
     padding-top: 50px;
+}
+
+/* EVENT PAGE */
+.event-hero{
+    height: 65vh;
+}
+#hero-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/hero-3.jpg);
+    background-position: center;
+    background-size: cover;
 }
